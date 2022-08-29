@@ -1,0 +1,188 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  align-items: center;
+  background-image: url(../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  height: 100vh;
+  justify-content: center;
+  width: auto;
+}
+
+img,
+h1 {
+  padding: 0%;
+  margin: 0%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.logo-section {
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px 80px 10px 10px;
+  height: 50%;
+  padding: 40px 100px 40px 40px;
+  width: auto;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.files-section {
+  align-content: center;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  padding-left: 0%;
+  padding: 10px;
+}
+
+.files-section a {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 7px;
+  padding: 7px 9px;
+}
+
+.storage-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.storage {
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  padding: 20px 34px;
+}
+
+.range {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 16px;
+  justify-content: center;
+}
+
+.range-slider {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 12px;
+  justify-content: center;
+  margin-left: 2px;
+  padding-right: 2px;
+  width: 75%;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+}
+
+.slider-edge {
+  align-self: flex-end;
+  background-color: white;
+  border-radius: 100%;
+  height: 11px;
+  width: 11px;
+}
+
+.storage-range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.highlighted-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.storage-left {
+  align-items: center;
+  align-self: center;
+  background-color: aliceblue;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  margin-top: -20px;
+  padding: 15px 20px;
+  width: fit-content;
+}
+
+.storage-left p {
+  color: hsl(240, 3%, 40%);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+h1 {
+  color: black;
+}
+
+.attribution {
+  background-color: hsl(228, 49%, 32%);
+  border-radius: 10px;
+  font-size: 12px;
+  margin-top: 80px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.attribution a {
+  color: hsl(51, 79%, 45%);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(../images/bg-desktop.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .main-container {
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    gap: 30px;
+  }
+
+  .storage-section {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .storage-left {
+    border-bottom-right-radius: 0%;
+    position: relative;
+    align-self: flex-end;
+    margin-bottom: -20px;
+    margin-right: 35px;
+  }
+
+  .storage-left::after {
+    border-bottom: 30px solid transparent;
+    border-right: 25px solid aliceblue;
+    bottom: -30px;
+    content: "";
+    position: absolute;
+    right: 0;
+  }
+}
