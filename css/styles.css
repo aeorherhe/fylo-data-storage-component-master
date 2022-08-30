@@ -180,7 +180,7 @@ h1 {
   .storage-left::after {
     border-bottom: 30px solid transparent;
     border-right: 25px solid aliceblue;
-    bottom: -30px;
+    bottom: -28px;
     content: "";
     position: absolute;
     right: 0;
