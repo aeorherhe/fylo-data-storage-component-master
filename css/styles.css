@@ -147,7 +147,7 @@ h1 {
   text-decoration: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 540px) {
   body {
     background-color: hsl(229, 57%, 11%);
     background-image: url(../images/bg-desktop.png);
@@ -160,7 +160,7 @@ h1 {
     align-items: flex-end;
     flex-direction: row;
     justify-content: space-between;
-    width: 70%;
+    width: auto;
     gap: 30px;
   }
 
@@ -185,8 +185,10 @@ h1 {
     position: absolute;
     right: 0;
   }
+}
 
-  .data-message {
-    word-wrap: nowrap;
+@media screen and (min-width: 1024px) {
+  .main-container {
+    width: 70%;
   }
 }
